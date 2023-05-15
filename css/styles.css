@@ -60,11 +60,13 @@ body {
   padding: 0 15px;
 }
 /* sekcja z menu /header studio i portfolio*/
-.header-container {
+.section--border-primary {
+  border-bottom: 1px solid var(--color-border-eys);
+}
+.section__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-border-eys);
 }
 .menu {
   display: flex;
@@ -950,9 +952,9 @@ body {
   color: var(--color-font-sky);
 }
 .key {
-  position: relative;
-  left: 0;
-  bottom: 50px;
+  position: absolute;
+  left: 0px;
+  bottom: 100px;
   display: flex;
 }
 .button__name {
@@ -977,14 +979,15 @@ body {
   cursor: pointer;
 }
 .key__button {
-  margin: 30px 164px 40px;
   position: relative;
   left: 0;
   bottom: -100px;
+  margin: 30px 164px 40px;
 }
 .button__name:is(:hover, :focus) {
   box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
   background-color: var(--color-background-skylight);
+  cursor: pointer;
 }
 .button__name {
   transition-property: box-shadow, background-color;
