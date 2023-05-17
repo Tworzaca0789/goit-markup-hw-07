@@ -59,7 +59,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-/* sekcja z menu /header studio i portfolio*/
+/* sekcja header*/
 .header {
   background: var(--color-background-snow);
   border-bottom: 1px solid var(--color-border-eys);
@@ -69,12 +69,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu {
+.header__menu {
   display: flex;
   gap: 93px;
 }
 .logo {
   display: flex;
+}
+.logo__header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -208,13 +210,15 @@ body {
 .panel__item:active {
   background-color: var(--color-background-skylight);
 }
-.panel__button {
+.button {
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  letter-spacing: 0.03em;
   border: none;
+}
+.button--primary {
+  letter-spacing: 0.03em;
   background: var(--color-background-light);
   font-weight: 500;
   line-height: 1.6;
@@ -231,11 +235,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.panel__button:is(:hover, :focus) {
+.button--primary:is(:hover, :focus) {
   background-color: var(--color-background-skylight);
   color: var(--color-font-snow);
 }
-.panel__button {
+.button--primary {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -352,34 +356,27 @@ body {
   display: flex;
   justify-content: center;
 }
-.button {
+.button--secondary {
+  position: relative;
+  margin-bottom: 200px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.8;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-font-snow);
   width: 200px;
   height: 50px;
   background-color: var(--color-background-skylight);
   box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 }
-.hero__button {
-  position: relative;
-  margin-bottom: 200px;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.hero__button:is(:hover, :focus) {
+.button--secondary:is(:hover, :focus) {
   color: var(--color-font-snow);
 }
-.hero__button {
+.button--secondary {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -456,7 +453,7 @@ body {
 .collection__image {
   mix-blend-mode: normal;
 }
-/*main studio section--backgroung-secoundary*/
+/*main studio section--blok gallery*/
 .section--backgroung-secoundary {
   background: var(--color-background-light);
 }
@@ -508,7 +505,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.media__item--fill-secondary {
+.media__item--filtr-primary {
   fill: var(--color-icon-street);
   margin-bottom: 12px;
 }
@@ -522,7 +519,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-/*main studio section/ blok logos*/
+/*main studio blok logos*/
 .section {
   background: var(--color-background-snow);
 }
@@ -569,17 +566,24 @@ body {
 .footer {
   background: var(--color-background-cloud);
 }
-.domain {
+.footer__container {
   display: flex;
   flex-direction: row;
 }
-.domain__box {
+.footer__information {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   margin-right: 70px;
+}
+.logo {
+  display: flex;
+}
+.footer__logo {
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 60px;
 }
 .logo--light:hover {
   color: var(--color-font-sky);
@@ -648,7 +652,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-font-snow);
 }
-.footer__title--vertical-align {
+.footer__title--secondary {
   vertical-align: top;
 }
 .media {
@@ -658,26 +662,28 @@ body {
   gap: 10px;
   padding-top: 20px;
 }
-.media__item--background-color {
+.media__item--filtr-secondary {
   fill: var(--color-icon-snow);
   background-color: var(--color-icon-ash);
 }
-.footer__form {
-  left: 0;
+.form {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+.footer__form {
+  position: relative;
+  flex-direction: column;
   margin-top: 72px;
   margin-bottom: 94px;
-  gap: 12px;
 }
-.search {
-  position: relative;
-  display: block;
-}
-.footer__title--padding-bottom {
-  padding-bottom: 20px;
+.footer__title--primary {
   display: flex;
+}
+.search__box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 12px;
 }
 .search__input {
   position: relative;
@@ -707,33 +713,25 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.button {
+.button--tertiary {
+  position: relative;
+  padding-left: 42px;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.8;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--color-font-snow);
   width: 200px;
   height: 50px;
   background-color: var(--color-background-skylight);
   box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 }
-.search__button {
-  position: relative;
-  padding-left: 42px;
-  margin-top: 36px;
-}
-.search__button:is(:hover, :focus) {
+.button--tertiary:is(:hover, :focus) {
   background-color: var(--color-background-skylight);
   border-color: var(--color-border-sky);
 }
-.search__button {
+.button--tertiary {
   transition-property: border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -964,9 +962,19 @@ body {
   left: 0;
   bottom: 0;
 }
-.form__button {
+.button--quaternary {
   position: absolute;
   left: 100px;
+  font-weight: 700;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--color-font-snow);
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-background-skylight);
+  box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
 }
 .button__name {
   position: relative;

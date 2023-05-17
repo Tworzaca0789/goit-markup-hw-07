@@ -22,9 +22,9 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <div class="menu">
+          <div class="header__menu">
             <!--blok logo-->
-            <div class="logo">
+            <div class="logo logo__header">
               <a href="./index.html" class="logo__link"
                 >Web<span class="logo--dark">Studio</span></a
               >
@@ -77,27 +77,47 @@
         <div class="container">
           <ul class="panel">
             <li class="panel__item">
-              <button class="panel__button" class="pointer" type="button">
+              <button
+                class="button button--primary"
+                class="pointer"
+                type="button"
+              >
                 Wszystkie
               </button>
             </li>
             <li class="panel__item">
-              <button class="panel__button" class="pointer" type="button">
+              <button
+                class="button button--primary"
+                class="pointer"
+                type="button"
+              >
                 Strony
               </button>
             </li>
             <li class="panel__item">
-              <button class="panel__button" class="pointer" type="button">
+              <button
+                class="button button--primary"
+                class="pointer"
+                type="button"
+              >
                 Aplikacje
               </button>
             </li>
             <li class="panel__item">
-              <button class="panel__button" class="pointer" type="button">
+              <button
+                class="button button--primary"
+                class="pointer"
+                type="button"
+              >
                 Dizajn
               </button>
             </li>
             <li class="panel__item">
-              <button class="panel__button" class="pointer" type="button">
+              <button
+                class="button button--primary"
+                class="pointer"
+                type="button"
+              >
                 Marketing
               </button>
             </li>
@@ -288,31 +308,34 @@
         </div>
       </section>
     </main>
+
     <!--footer studio i portfolio-->
     <footer class="footer">
       <div class="container">
-        <div class="domain">
-          <div class="domain__box">
-            <a href="./index.html" class="logo"
-              >Web<span class="logo--light">Studio</span></a
-            >
+        <div class="footer__container">
+          <div class="footer__information">
+            <div class="logo footer__logo">
+              <a href="./index.html" class="logo__link"
+                >Web<span class="logo--light">Studio</span></a
+              >
+            </div>
             <address class="conect">
               <ul class="conect__list">
                 <li class="conect__item">
                   <a
-                    class="link"
+                    class="link link--primary"
                     href="https://goo.gl/maps/9W74Lst49aurTwPx5"
                     target="_blank"
                     >m. Warszawa, Aleje Jerozolimskie 21</a
                   >
                 </li>
                 <li class="conect__item">
-                  <a class="link conect__link" href="meilto:info@example.com"
+                  <a class="link link--secondary" href="meilto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
                 <li class="conect__item">
-                  <a class="link conect__link" href="tel:+48111111111"
+                  <a class="link link--secondary" href="tel:+48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
@@ -321,45 +344,50 @@
           </div>
 
           <div class="trunk">
-            <h3 class="trunk__title">DOŁĄCZ DO NAS</h3>
+            <h3 class="footer__title footer__title--secondary">
+              DOŁĄCZ DO NAS
+            </h3>
             <ul class="media trunk__media">
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--filtr-secondary">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </li>
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--filtr-secondary">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </li>
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--filtr-secondary">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </li>
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--filtr-secondary">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <form>
-            <div class="cover">
-              <div class="search">
-                <label class="search__label" for="contact_email"
-                  >zapisz się do newslettera</label
-                >
-                <input
-                  class="search__input"
-                  typ="email"
-                  name="email"
-                  id="contact_email"
-                  placeholder="E-mail"
-                />
-              </div>
-              <button class="button search__button" type="submit">
+
+          <form class="form footer__form">
+            <div class="search">
+              <label
+                class="footer__title footer__title-primary"
+                for="contact_email"
+                >zapisz się do newslettera</label
+              >
+            </div>
+            <div class="search__box">
+              <input
+                class="search__input"
+                typ="email"
+                name="email"
+                id="contact_email"
+                placeholder="E-mail"
+              />
+              <button class="button button--tertiary" type="submit">
                 Zapisz się
                 <svg class="button__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send-1"></use>
