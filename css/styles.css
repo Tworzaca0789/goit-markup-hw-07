@@ -742,6 +742,8 @@ body {
   fill: var(--color-icon-snow);
   margin-left: 24px;
 }
+
+/*MODAL*/
 .backdrop {
   position: fixed;
   left: 0;
