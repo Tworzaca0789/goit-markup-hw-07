@@ -18,58 +18,64 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--sekcja z menu-->
-    <section class="section section--border-primary">
-      <div class="container section__container">
-        <div class="menu">
-          <!--blok logo-->
-          <a href="./index.html" class="logo"
-            >Web<span class="logo--dark">Studio</span></a
-          >
-          <nav class="box-navigation">
+    <!--sekcja header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <div class="menu">
+            <!--blok logo-->
+            <div class="logo">
+              <a href="./index.html" class="logo__link"
+                >Web<span class="logo--dark">Studio</span></a
+              >
+            </div>
             <!--blok navigation-->
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="navigation__link" href="./index.html"
-                  ><span class="navigation__label--active">Agencja</span></a
-                >
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./index.html">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="link link--quaternary" href="./index.html"
+                    ><span class="navigation__label--active">Agencja</span></a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="link link--quaternary" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="link link--quaternary" href="./index.html"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--blok communication-->
+          <ul class="communication">
+            <li class="communication__item">
+              <a href="mailto:info@devstudio.com" class="link link--tertiary"
+                ><svg class="communication__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="communication__item">
+              <a href="tel:+48111111111" class="link link--tertiary"
+                ><svg class="communication__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
         </div>
-        <!--blok communication-->
-        <ul class="communication">
-          <li class="communication__item">
-            <a href="mailto:info@devstudio.com" class="communication__link"
-              ><svg class="communication__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="communication__item">
-            <a href="tel:+48111111111" class="communication__link"
-              ><svg class="communication__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
       </div>
-    </section>
+    </header>
 
     <main>
       <!--main studio section-hero-->
       <section class="section--background-primary">
         <div class="container">
-          <!--blok page-->
+          <!--blok hero-->
           <div class="hero">
             <h1 class="hero__title">
               <strong>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</strong>
@@ -141,7 +147,7 @@
         <div class="container">
           <h2 class="section__title">Czym się zajmujemy</h2>
           <ul class="collection">
-            <li class="collection__list">
+            <li class="collection__item">
               <img
                 class="collection__image"
                 src="./images/aboutus/about_us_img1.jpg"
@@ -151,7 +157,7 @@
               />
               <p class="collection__name">Aplikacje komputerowe</p>
             </li>
-            <li class="collection__list">
+            <li class="collection__item">
               <img
                 class="collection__image"
                 src="./images/aboutus/about_us_img2.jpg"
@@ -161,7 +167,7 @@
               />
               <p class="collection__name">Aplikacje mobilne</p>
             </li>
-            <li class="collection__list">
+            <li class="collection__item">
               <img
                 class="collection__image"
                 src="./images/aboutus/about_us_img3.jpg"
@@ -179,7 +185,7 @@
         <div class="container">
           <h2 class="section__title">Nasz zespół</h2>
           <ul class="gallery">
-            <li class="gallery__list">
+            <li class="gallery__item">
               <img
                 src="./images/ourteam/ourteam_img1.jpg"
                 alt="zadowolony producent"
@@ -211,7 +217,7 @@
                 </li>
               </ul>
             </li>
-            <li class="gallery__list">
+            <li class="gallery__item">
               <img
                 src="./images/ourteam/ourteam_img2.jpg"
                 alt="programista z blond włosami"
@@ -243,7 +249,7 @@
                 </li>
               </ul>
             </li>
-            <li class="gallery__list">
+            <li class="gallery__item">
               <img
                 src="./images/ourteam/ourteam_img3.jpg"
                 alt="znawca marketingu"
@@ -275,7 +281,7 @@
                 </li>
               </ul>
             </li>
-            <li class="gallery__list">
+            <li class="gallery__item">
               <img
                 src="./images/ourteam/ourteam_img4.jpg"
                 alt="projektant"
@@ -356,26 +362,26 @@
       <div class="container">
         <div class="domain">
           <div class="domain__box">
-            <a href="./index.html" class="logo"
+            <a href="./index.html" class="logo__link"
               >Web<span class="logo--light">Studio</span></a
             >
             <address class="conect">
               <ul class="conect__list">
                 <li class="conect__item">
                   <a
-                    class="link"
+                    class="link link--primary"
                     href="https://goo.gl/maps/WGY587vLbB5wT8iL8"
                     target="_blank"
                     >m. Warszawa, Aleje Jerozolimskie 21</a
                   >
                 </li>
                 <li class="conect__item">
-                  <a class="link conect__link" href="mailto:info@example.com"
+                  <a class="link link--secondary" href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
                 <li class="conect__item">
-                  <a class="link conect__link" href="tel:+48111111111"
+                  <a class="link link--secondary" href="tel:+48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
@@ -384,51 +390,54 @@
           </div>
 
           <div class="trunk">
-            <h3 class="trunk__title">DOŁĄCZ DO NAS</h3>
+            <h3 class="footer__title footer__title--vertical-align">
+              DOŁĄCZ DO NAS
+            </h3>
             <ul class="media trunk__media">
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--background-color">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </li>
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--background-color">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </li>
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--background-color">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </li>
-              <li class="media__item media__item--background-color-next">
+              <li class="media__item media__item--background-color">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <form>
-            <div class="cover">
-              <div class="search">
-                <label class="search__label" for="contact_email"
-                  >zapisz się do newslettera</label
-                >
-                <input
-                  class="search__input"
-                  typ="email"
-                  name="email"
-                  id="contact_email"
-                  placeholder="E-mail"
-                />
-              </div>
-              <button class="button search__button" type="submit">
-                Zapisz się
-                <svg class="button__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send-1"></use>
-                </svg>
-              </button>
+
+          <form class="form footer__form">
+            <div class="search">
+              <label
+                class="footer__title footer__title--padding-bottom"
+                for="contact_email"
+                >zapisz się do newslettera</label
+              >
+              <input
+                class="search__input"
+                typ="email"
+                name="email"
+                id="contact_email"
+                placeholder="E-mail"
+              />
             </div>
+            <button class="button search__button" type="submit">
+              Zapisz się
+              <svg class="button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -442,12 +451,12 @@
           </svg>
         </button>
 
-        <form name="contact_form">
-          <div class="form">
+        <form name="contact_form" class="form">
+          <div class="modal__form">
             <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
             <div class="form__box">
               <label class="form__label" for="firstname">Imię</label>
-              <label class="form__name"
+              <label class="form__picture"
                 ><svg class="form__icon" width="18" height="18">
                   <use
                     href="./images/icons.svg#icon-person-black-18dp-1-1"
@@ -463,8 +472,8 @@
             </div>
             <div class="form__box">
               <label class="form__label" for="user_phone">Telefon</label>
-              <label class="form__name"
-                ><svg class="form__icon" width="18" height="18">
+              <div class="form__picture">
+                <svg class="form__icon" width="18" height="18">
                   <use
                     href="./images/icons.svg#icon-phone-black-18dp-1-1"
                   ></use>
@@ -475,11 +484,11 @@
                   name="phone"
                   id="user_phone"
                 />
-              </label>
+              </div>
             </div>
             <div class="form__box">
               <label class="form__label" for="user_email">Email</label>
-              <label class="form__name"
+              <label class="form__picture"
                 ><svg class="form__icon" width="18" height="18">
                   <use
                     href="./images/icons.svg#icon-email-black-18dp-1-1"
@@ -504,27 +513,27 @@
               </label>
             </div>
 
-            <div class="checkbok">
-              <label class="checkbox__expression">
+            <div class="checkbox">
+              <div class="checkbox__box">
                 <input
+                  class="checkbox__input"
                   type="checkbox"
                   name="statute"
                   value="true"
-                  class="checkbox__input"
                   checked
                 />
                 <svg class="checkbox__icon" width="11" height="8">
                   <use href="./images/icons.svg#icon-Vector-3-1"></use>
                 </svg>
+              </div>
+              <p class="checkbox__text">
                 Oświadczam iż akceptuję
-                <a href="#" class="checkbox__label">Regulamin</a> i
-                <a href="#" class="checkbox__label"
-                  >Politykę Prywatności.</a
-                ></label
-              >
+                <a href="#" class="checkbox__name">Regulamin</a> i
+                <a href="#" class="checkbox__name">Politykę Prywatności.</a>
+              </p>
             </div>
-            <div class="key">
-              <button class="button key__button" typ="submit">
+            <div class="form__key">
+              <button class="button form__button" typ="submit">
                 <span class="button__name">Wyślij</span>
               </button>
             </div>

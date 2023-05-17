@@ -60,10 +60,11 @@ body {
   padding: 0 15px;
 }
 /* sekcja z menu /header studio i portfolio*/
-.section--border-primary {
+.header {
+  background: var(--color-background-snow);
   border-bottom: 1px solid var(--color-border-eys);
 }
-.section__container {
+.header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,13 +73,13 @@ body {
   display: flex;
   gap: 93px;
 }
-.menu .logo {
+.logo {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 /*blok logo*/
-.logo {
+.logo__link {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -86,6 +87,9 @@ body {
   color: var(--color-font-sky);
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+.logo--dark {
+  color: var(--color-font-dark);
 }
 .logo--dark:hover {
   color: var(--color-font-sky);
@@ -96,15 +100,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.logo--dark {
-  color: var(--color-font-dark);
-}
-
 /*blok navigation*/
-.box-navigation {
+.navigation {
   display: flex;
 }
-.navigation {
+.navigation__list {
   display: flex;
   gap: 46px;
   padding-top: 32px;
@@ -126,20 +126,18 @@ body {
   height: 4px;
   border-radius: 2px;
 }
-.navigation__link {
+.link--quaternary {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   color: var(--color-font-primary);
   letter-spacing: 0.02em;
-  text-decoration-line: none;
   display: flex;
   flex-direction: column;
 }
-.navigation__link:is(:hover, :focus) {
+.link--quaternary:is(:hover, :focus) {
   color: var(--color-font-sky);
 }
-.navigation__link {
+.link--quaternary {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -170,18 +168,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.communication__link {
+.link--tertiary {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   color: var(--color-font-wood);
-  text-decoration-line: none;
   letter-spacing: 0.02em;
 }
-.communication__link:is(:hover, :focus) {
+.link--tertiary:is(:hover, :focus) {
   color: var(--color-font-sky);
 }
-.communication__link {
+.link--tertiary {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -196,7 +192,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-
 /*main portfolio blok panel*/
 .panel {
   display: flex;
@@ -438,7 +433,7 @@ body {
   display: flex;
   gap: 30px;
 }
-.collection__list {
+.collection__item {
   position: relative;
   display: inline-block;
 }
@@ -474,7 +469,7 @@ body {
   gap: 30px;
   border-radius: 1px solid var(--color-font-snow);
 }
-.gallery__list {
+.gallery__item {
   padding: 0;
   background-color: var(--color-background-snow);
   display: block;
@@ -529,7 +524,7 @@ body {
 }
 /*main studio section/ blok logos*/
 .section {
-  background: var(--color-icon-snow);
+  background: var(--color-background-snow);
 }
 .section__title {
   font-weight: 700;
@@ -598,10 +593,12 @@ body {
 .logo--light {
   color: var(--color-font-snow);
 }
-.link:is(:hover, :focus) {
+.link--primary,
+.link--secondary:is(:hover, :focus) {
   color: var(--color-font-sky);
 }
-.link {
+.link--primary,
+.link--secondary {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,13 +617,18 @@ body {
 }
 .link {
   font-size: 14px;
-  line-height: 1.7;
   text-decoration-line: none;
+}
+.link--primary {
+  line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--color-font-snow);
 }
-.conect__link {
+.link--secondary {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
   padding-top: 9px;
   color: var(--color-font-millkcoffee);
 }
@@ -637,15 +639,17 @@ body {
   padding-bottom: 100px;
   margin-right: 78px;
 }
-.trunk__title {
+.footer__title {
   font-weight: 700;
   font-style: bold;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-  vertical-align: top;
   letter-spacing: 0.03em;
   color: var(--color-font-snow);
+}
+.footer__title--vertical-align {
+  vertical-align: top;
 }
 .media {
   display: flex;
@@ -654,12 +658,11 @@ body {
   gap: 10px;
   padding-top: 20px;
 }
-.media__item--background-color-next {
+.media__item--background-color {
   fill: var(--color-icon-snow);
   background-color: var(--color-icon-ash);
 }
-.cover {
-  position: relative;
+.footer__form {
   left: 0;
   display: flex;
   flex-direction: row;
@@ -672,16 +675,9 @@ body {
   position: relative;
   display: block;
 }
-.search__label {
-  position: relative;
-  display: flex;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer__title--padding-bottom {
   padding-bottom: 20px;
-  color: var(--color-font-snow);
+  display: flex;
 }
 .search__input {
   position: relative;
@@ -729,6 +725,7 @@ body {
   cursor: pointer;
 }
 .search__button {
+  position: relative;
   padding-left: 42px;
   margin-top: 36px;
 }
@@ -756,7 +753,7 @@ body {
   background-color: var(--color-background-dark);
 }
 .modal {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   left: 50%;
@@ -806,7 +803,7 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-.form {
+.modal__form {
   position: relative;
   padding-top: 40px;
   padding-right: 40px;
@@ -824,6 +821,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  display: block;
 }
 .form__box {
   position: relative;
@@ -836,11 +834,11 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--color-font-wood);
-  display: block;
+  display: flex;
   flex-direction: column;
   border-radius: 4px solid rgba(33, 33, 33, 0.2);
 }
-.form__name {
+.form__picture {
   position: relative;
   padding: 11px 12px;
   width: 448px;
@@ -849,14 +847,14 @@ body {
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 10px;
-  display: block;
+  display: flex;
 }
-.form__name:is(:hover, :focus) {
+.form__picture:is(:hover, :focus) {
   border-color: var(--color-border-sky);
   fill: var(--color-icon-sky);
   cursor: pointer;
 }
-.form__name {
+.form__picture {
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -867,7 +865,8 @@ body {
   display: inline-flex;
 }
 .form__input {
-  position: absolute;
+  position: relative;
+  display: flex;
   margin-left: 12px;
   outline: none;
   border: none;
@@ -906,22 +905,32 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.checkbok {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 14px;
-  margin-right: 14px;
-}
-.checkbox__expression {
+.checkbox {
   position: relative;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+.checkbox__box {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+.checkbox__text {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  display: inline;
   color: var(--color-font-wood);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 5px;
 }
 .checkbox__input {
   position: absolute;
@@ -930,59 +939,39 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
 }
 .checkbox__icon {
+  position: relative;
+  left: 0;
+  bottom: 0;
   fill: var(--color-icon-snow);
   border: 2px solid var(--color-icon-darknight);
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  margin: 0;
+  display: flex;
   cursor: pointer;
-  text-align: center;
 }
 .checkbox__input:checked + .checkbox__icon {
   border-color: var(--color-border-sky);
   background-color: var(--color-background-sky);
 }
-.checkbox__label {
+.checkbox__name {
   position: relative;
   display: inline;
   color: var(--color-font-sky);
 }
-.key {
+.form__key {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+.form__button {
   position: absolute;
-  left: 0px;
-  bottom: 100px;
-  display: flex;
+  left: 100px;
 }
 .button__name {
   position: relative;
   padding: 10px 76px;
-}
-.button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
   display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-font-snow);
-  width: 200px;
-  height: 50px;
-  background-color: var(--color-background-skylight);
-  box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
-.key__button {
-  position: relative;
-  left: 0;
-  bottom: -100px;
-  margin: 30px 164px 40px;
 }
 .button__name:is(:hover, :focus) {
   box-shadow: 0px 4px 4px var(--color-box-shadow-darknice);

@@ -18,47 +18,58 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--sekcja z menu-->
-    <section class="section section--border-primary">
-      <div class="container section__container">
-        <div class="menu">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo--dark">Studio</span></a
-          >
-          <nav class="box__navigation">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a class="navigation__link" href="./index.html">Agencja</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html"
-                  ><span class="navigation__label--active">Portfolio</span></a
-                >
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html">Kontakty</a>
-              </li>
-            </ul>
-          </nav>
+    <!--sekcja header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <div class="menu">
+            <!--blok logo-->
+            <div class="logo">
+              <a href="./index.html" class="logo__link"
+                >Web<span class="logo--dark">Studio</span></a
+              >
+            </div>
+            <!--blok navigation-->
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="link link--quaternary" href="./index.html"
+                    >Agencja</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="link link--quaternary" href="./portfolio.html"
+                    ><span class="navigation__label--active">Portfolio</span></a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="link link--quaternary" href="./portfolio.html"
+                    >Kontakty</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--blok communication-->
+          <ul class="communication">
+            <li class="communication__item">
+              <a href="mailto:info@devstudio.com" class="link link--tertiary"
+                ><svg class="communication__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="communication__item">
+              <a href="tel:+48111111111" class="link link--tertiary"
+                ><svg class="communication__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul class="communication">
-          <li class="communication__item">
-            <a href="mailto:info@devstudio.com" class="communication__link"
-              ><svg class="communication__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="communication__item">
-            <a href="tel:+48111111111" class="communication__link"
-              ><svg class="communication__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
       </div>
-    </section>
+    </header>
 
     <main>
       <!--main portfolio blok panel-->
