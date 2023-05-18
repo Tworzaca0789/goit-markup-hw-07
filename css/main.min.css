@@ -1,1 +1,1 @@
-/*# sourceMappingURL=main.min.css.map */
+.header{border-bottom:var(--border-connecting)}.header__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header__menu{display:-webkit-box;display:-ms-flexbox;display:flex;gap:93px}.header__logo{padding-top:24px;padding-bottom:25px}:root{--border-connecting: #ececec}/*# sourceMappingURL=main.min.css.map */

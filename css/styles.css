@@ -13,7 +13,7 @@
   --color-background-skylight: #2196f3;
   --color-font-eclipse: rgba(255, 255, 255, 0.6);
   --color-border-white: #eeeeee;
-  --color-border-eys: #ececec;
+  --border-connecting: #ececec;
   --color-border-sky: #2196f3;
   --color-border-dark: rgba(33, 33, 33, 0.2);
   --color-border-woodlight: rgba(255, 255, 255, 0.3);
@@ -75,7 +75,7 @@ body {
 .logo {
   display: flex;
 }
-.logo__header {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
