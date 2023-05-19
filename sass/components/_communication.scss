@@ -6,18 +6,21 @@
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    & > a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover,
+      &:focus {
+        fill: var(--color-font-hover);
+      }
+    }
   }
-  & > a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  &:hover,
-  &:focus {
+
+  &__icon:hover,
+  &__icon:focus {
     fill: var(--color-font-hover);
   }
-}
-.communication__icon:hover,
-.communication__icon:focus {
-  fill: var(--color-font-hover);
 }

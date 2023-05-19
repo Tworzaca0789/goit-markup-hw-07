@@ -1,5 +1,6 @@
 .navigation {
   display: flex;
+
   &__list {
     display: flex;
     gap: 46px;
@@ -11,15 +12,16 @@
   }
   &__label--active {
     position: relative;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: var(--color-background-hover);
-    margin-top: 28px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: var(--color-background-hover);
+      margin-top: 28px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+    }
   }
 }

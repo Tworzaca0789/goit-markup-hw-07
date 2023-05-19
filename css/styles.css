@@ -50,14 +50,10 @@
   --font-size-s: 12px;
   --color-background-unique: #7fffd4;
   --color-border-senary: #21212133;
-
-  --color-font-eclipse: #ffffff99;
-  --color-border-secondary: #ffffff;
-  --color-background-bag: #e5e5e5;
-  --color-background-dark: #00000033;
-  --color-icon-wood: #757575;
   --color-icon-quinary: #212121;
-  --color-gradient-dark: #2f303a40;
+  --color-gradient-primary: #2f303a40;
+  --color-background-backdrop: #00000033;
+  --font-size-senary: 36px;
 }
 * {
   padding: 0;
@@ -340,11 +336,11 @@ body {
 }
 /*main studio section-hero*/
 .section--background-primary {
-  background: var(--color-background-cloud);
+  background: var(--background-transparency-cloud);
   background-image: linear-gradient(
       to top left,
-      var(--color-gradient-dark),
-      var(--color-gradient-dark)
+      var(--color-gradient-primary),
+      var(--color-gradient-primary)
     ),
     url(/goit-markup-hw-04/images/backgroundphoto/maintitle.jpg);
   max-width: 1600;
@@ -765,7 +761,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-background-dark);
+  background-color: var(--color-background-backdrop);
 }
 .modal {
   position: relative;
