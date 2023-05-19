@@ -11,7 +11,10 @@
       fill: var(--color-icon-secondary);
       margin-bottom: 12px;
     }
-
+    &--filtr-secondary {
+      fill: var(--color-icon-primary);
+      background-color: var(--color-icon-tertiary);
+    }
     &:hover,
     &:focus {
       fill: var(--color-icon-primary);

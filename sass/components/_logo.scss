@@ -11,8 +11,17 @@
   }
   &--dark {
     color: var(--color-font-strong);
+
+    &:hover {
+      color: var(--color-font-hover);
+    }
   }
-  &:hover {
-    color: var(--color-font-hover);
+
+  &--light {
+    color: var(--color-font-secondary);
+
+    &:hover {
+      color: var(--color-font-hover);
+    }
   }
 }
