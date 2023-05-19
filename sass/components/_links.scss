@@ -1,3 +1,14 @@
+.link--tertiary {
+  font-weight: var(--small-weight);
+  line-height: 1.1;
+  color: var(--color-font-mixed);
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--color-font-hover);
+  }
+}
 .link--quaternary {
   font-weight: var(--small-weight);
   line-height: 1.1;
