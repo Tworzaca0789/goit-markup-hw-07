@@ -1,0 +1,13 @@
+.link--quaternary {
+  font-weight: var(--small-weight);
+  line-height: 1.1;
+  color: var(--color-font-primary);
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus {
+    color: var(--color-font-hover);
+  }
+}

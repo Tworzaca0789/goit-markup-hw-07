@@ -1,2 +1,6 @@
-@use "./components/header" as *;
 @use "./utils/variables" as *;
+@use "./components/header" as *;
+@use "./components/logo" as *;
+@use "./components/animations" as *;
+@use "./components/navigation" as *;
+@use "./components/links" as *;
