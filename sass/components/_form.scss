@@ -67,7 +67,11 @@
 
   &__key {
     position: relative;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    box-shadow: 0px 4px 4px var(--color-box-shadow-senary);
   }
 }

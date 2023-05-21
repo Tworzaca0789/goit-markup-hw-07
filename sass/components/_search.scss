@@ -33,4 +33,20 @@
       border-color: var(--color-border-quaternary);
     }
   }
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+    padding-left: 42px;
+    align-items: center;
+    box-shadow: 0px 4px 4px var(--color-box-shadow-senary);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-background-hover);
+      border-color: var(--color-border-quaternary);
+    }
+  }
 }
