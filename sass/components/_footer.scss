@@ -35,13 +35,5 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--color-font-secondary);
-
-    &--primary {
-      display: flex;
-    }
-
-    &--secondary {
-      vertical-align: top;
-    }
   }
 }

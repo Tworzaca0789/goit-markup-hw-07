@@ -1,5 +1,6 @@
 .header {
-  border-bottom: var(--border-connecting);
+  border-bottom: 1px solid var(--border-connecting);
+
   &__container {
     display: flex;
     flex-direction: row;
@@ -8,9 +9,6 @@
   &__menu {
     display: flex;
     gap: 93px;
-  }
-  &__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    align-items: center;
   }
 }
